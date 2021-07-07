@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package cliente;
+package func;
 
 /**
  *
- * @author Romulo Leite
+ * @author phrea
  */
-public class cliente {
+public class criarFunc {
     
 }
