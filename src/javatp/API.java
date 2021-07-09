@@ -15,14 +15,27 @@ public class API {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int escolha;
+        API menu = new API();
+        menu.printHeader();
+        menu.printMenu();
+
+    }
+
+    public void printHeader(){
+            System.out.println("+----------------------+");
+            System.out.println("|   Seja bem-vindo/a   |");
+            System.out.println("|     à nossa API      |");
+            System.out.println("+----------------------+");
+    }
+    
+    public void printMenu(){
+        System.out.println("\n");
         System.out.println("------------------------");
         System.out.println("Escolha uma das opções: ");
         System.out.println("1 - Cliente");
         System.out.println("2 - Funcionário");
         System.out.println("3 - Ler ficheiros .json");
         System.out.println("4 - Exportação relatórios");
-
     }
-
+    
 }
