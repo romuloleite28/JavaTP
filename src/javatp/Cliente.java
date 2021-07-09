@@ -1,4 +1,4 @@
- /*
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -19,7 +19,6 @@ public class Cliente {
     private String patologias;
     private int peso;
     private int altura;
-    private int teste;
 
     public Cliente(int id, String dataNascimento, String genero, String patologias, int peso, int altura) {
         this.id = id;

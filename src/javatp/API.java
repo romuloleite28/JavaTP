@@ -15,7 +15,14 @@ public class API {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        int escolha;
+        System.out.println("------------------------");
+        System.out.println("Escolha uma das opções: ");
+        System.out.println("1 - Cliente");
+        System.out.println("2 - Funcionário");
+        System.out.println("3 - Ler ficheiros .json");
+        System.out.println("4 - Exportação relatórios");
+
     }
-    
+
 }
