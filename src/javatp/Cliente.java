@@ -10,7 +10,7 @@ package javatp;
  * @author phrea
  */
 public class Cliente {
-    
+
     private boolean hospede;
     private String zona;
     private int id;
@@ -19,6 +19,7 @@ public class Cliente {
     private String patologias;
     private int peso;
     private int altura;
+    private int teste;
 
     public Cliente(int id, String dataNascimento, String genero, String patologias, int peso, int altura) {
         this.id = id;
@@ -76,7 +77,5 @@ public class Cliente {
     public void setAltura(int altura) {
         this.altura = altura;
     }
-    
-    
-    
+
 }
