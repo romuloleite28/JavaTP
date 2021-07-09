@@ -10,6 +10,11 @@ package javatp;
  * @author Romulo Leite
  */
 public class Divisoes {
-    
-    
+
+    private int id;
+    private int lotacao_maxima;
+    private String zona;
+    private String divisao;
+    private int limite_maximo;
+    private String tipo_divisao;
 }

@@ -11,6 +11,8 @@ package javatp;
  */
 public class Cliente {
     
+    private boolean hospede;
+    private String zona;
     private int id;
     private String dataNascimento;
     private String genero;
