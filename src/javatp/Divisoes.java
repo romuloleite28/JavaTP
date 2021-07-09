@@ -11,5 +11,9 @@ package javatp;
  */
 public class Divisoes {
     
+    private int id;
+    private int numeroHospedes;
+    //definir interface zonas para ser implementada pois uma zona contem várias divisoes
+    
     
 }
