@@ -5,7 +5,7 @@
  */
 package API;
 
-import java.io.IOException;
+import java.util.Scanner;
 
 /**
  *
@@ -16,12 +16,59 @@ public class API {
     /**
      * @param args the command line arguments
      */
-    int escolha = 0;
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        int escolha = 0;
 
-    public static void main(String[] args) throws IOException {
         API menu = new API();
+
         menu.printHeader();
         menu.printMenu();
+
+        escolha = sc.nextInt();
+
+        int op = 0;
+
+        switch (escolha) {
+
+            case 1:
+                menu.printMenuCliente();
+                if (op == 1) {
+                    System.out.println("Falta colocar os métodos");
+                }
+                if (op == 2) {
+                    System.out.println("Falta colocar os métodos");
+                }
+                if (op == 3) {
+                    System.out.println("Falta colocar os métodos");
+                }
+                break;
+
+            case 2:
+                menu.printMenuFunc();
+                if (op == 1) {
+                    System.out.println("Falta colocar os métodos");
+                }
+                if (op == 2) {
+                    System.out.println("Falta colocar os métodos");
+                }
+                if (op == 3) {
+                    System.out.println("Falta colocar os métodos");
+                }
+                break;
+
+            case 3:
+                menu.printMenuJson();
+                if (op == 1) {
+                    System.out.println("Falta colocar os métodos");
+                }
+                if (op == 2) {
+                    System.out.println("Falta colocar os métodos");
+                }
+                break;
+
+        }
 
     }
 
@@ -30,9 +77,10 @@ public class API {
         System.out.println("|   Seja bem-vindo/a   |");
         System.out.println("|     à nossa API      |");
         System.out.println("+----------------------+");
+
     }
 
-    public void printMenu() throws IOException {
+    public void printMenu() {
         System.out.println("\n");
         System.out.println("------------------------");
         System.out.println("Escolha uma das opções: ");
@@ -40,7 +88,7 @@ public class API {
         System.out.println("2 - Funcionário");
         System.out.println("3 - Ler ficheiros .json");
         System.out.println("4 - Exportação dados");
-        System.in.readNBytes(escolha);
+
     }
 
     public void printMenuCliente() {
@@ -48,9 +96,8 @@ public class API {
         System.out.println("--- Área de cliente  --");
         System.out.println("------------------------");
         System.out.println("1 - Adicionar cliente");
-        System.out.println("2 - Editar cliente");
-        System.out.println("3 - Remover cliente");
-        System.out.println("4 - Alterar posição do cliente");
+        System.out.println("2 - Remover cliente");
+        System.out.println("3 - Alterar posição do cliente");
         System.out.println("------------------------");
     }
 
@@ -59,9 +106,8 @@ public class API {
         System.out.println("- Área de Funcionário --");
         System.out.println("------------------------");
         System.out.println("1 - Adicionar funcionário");
-        System.out.println("2 - Editar funcionário");
-        System.out.println("3 - Remover funcionário");
-        System.out.println("4 - Alterar posição do funcionário");
+        System.out.println("2 - Remover funcionário");
+        System.out.println("3 - Alterar posição do funcionário");
         System.out.println("------------------------");
     }
 
@@ -73,5 +119,4 @@ public class API {
         System.out.println("2 - Divisoes.json");
         System.out.println("------------------------");
     }
-
 }

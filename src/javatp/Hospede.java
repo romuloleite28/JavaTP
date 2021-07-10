@@ -9,12 +9,12 @@ package javatp;
  *
  * @author Romulo Leite
  */
-public class Hospede extends Cliente {
-    
-    private Divisao aposentos;
-    
-    public Hospede(int id, String nome, String data_nascimento, String[] patologias, int peso, int altura, Divisao aposentos) {
-        super(id, nome, data_nascimento, patologias, peso, altura);
-        this.aposentos = aposentos;
-    }
-}
+//public class Hospede extends Cliente {
+//    
+//    private Divisao aposentos;
+//    
+//    public Hospede(int id, String nome, String data_nascimento, String[] patologias, int peso, int altura, Divisao aposentos) {
+//        super(id, nome, data_nascimento, patologias, peso, altura);
+//        this.aposentos = aposentos;
+//    }
+//}
