@@ -15,9 +15,15 @@ public class GestaoHotel implements Hotel{
     private int num_registers;
     private Registo[] registos;
     
-    public GestaoHotel(){
-        this.registos = new Registo[this.max_registers];
+public boolean adicionarCliente (String nome){
+    if (nome == null){
+        System.out.println("O nome não pode ser nulo");
     }
+    
+    if (!clienteExiste(nome)){
+        this.registos=
+    }
+}
     
     
     
