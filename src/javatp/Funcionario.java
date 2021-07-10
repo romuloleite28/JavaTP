@@ -9,35 +9,22 @@ package javatp;
  *
  * @author phrea
  */
-public class Funcionario {
-        
-    private Cliente funcionario;
-    private String cargo;
+public class Funcionario extends Registo {
 
-    public Cliente getFuncionario() {
-        return funcionario;
-    }
+    protected String cargo;
 
-    public void setFuncionario(Cliente funcionario) {
-        this.funcionario = funcionario;
-    }
-
-    public String getCargo() {
-        return cargo;
-    }
-
-    public void setCargo(String cargo) {
-        this.cargo = cargo;
-    }
-
-    public Funcionario(Cliente funcionario, String cargo) {
-        this.funcionario = funcionario;
-        this.cargo = cargo;
+    public Funcionario(int id, String nome, String dataNascimento, char genero, String patologias, int peso, int altura, String cargo) {
+        super(id, nome, dataNascimento, genero, patologias, peso, altura, cargo);
     }
 
     @Override
     public String toString() {
-        return "Funcionario{" + "funcionario=" + funcionario + ", cargo=" + cargo + '}';
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
+
+    @Override
+    public boolean equals(Object obj) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 }

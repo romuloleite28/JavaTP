@@ -9,72 +9,20 @@ package javatp;
  *
  * @author phrea
  */
-public class Cliente {
+public class Cliente extends Registo {
 
-    private boolean hospede;
-    private String zona;
-    private int id;
-    private String dataNascimento;
-    private String genero;
-    private String patologias;
-    private int peso;
-    private int altura;
-
-    public Cliente(int id, String dataNascimento, String genero, String patologias, int peso, int altura) {
-        this.id = id;
-        this.dataNascimento = dataNascimento;
-        this.genero = genero;
-        this.patologias = patologias;
-        this.peso = peso;
-        this.altura = altura;
+    public Cliente(int id, String nome, String dataNascimento, char genero, String patologias, int peso, int altura, String cargo) {
+        super(id, nome, dataNascimento, genero, patologias, peso, altura, cargo);
     }
 
-    public int getId() {
-        return id;
+    @Override
+    public String toString() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    public String getDataNascimento() {
-        return dataNascimento;
-    }
-
-    public String getGenero() {
-        return genero;
-    }
-
-    public String getPatologias() {
-        return patologias;
-    }
-
-    public int getPeso() {
-        return peso;
-    }
-
-    public int getAltura() {
-        return altura;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public void setDataNascimento(String dataNascimento) {
-        this.dataNascimento = dataNascimento;
-    }
-
-    public void setGenero(String genero) {
-        this.genero = genero;
-    }
-
-    public void setPatologias(String patologias) {
-        this.patologias = patologias;
-    }
-
-    public void setPeso(int peso) {
-        this.peso = peso;
-    }
-
-    public void setAltura(int altura) {
-        this.altura = altura;
+    @Override
+    public boolean equals(Object obj) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
 }

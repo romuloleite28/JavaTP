@@ -3,7 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package javatp;
+package API;
+
+import java.io.IOException;
 
 /**
  *
@@ -14,7 +16,9 @@ public class API {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    int escolha = 0;
+
+    public static void main(String[] args) throws IOException {
         API menu = new API();
         menu.printHeader();
         menu.printMenu();
@@ -28,14 +32,15 @@ public class API {
         System.out.println("+----------------------+");
     }
 
-    public void printMenu() {
+    public void printMenu() throws IOException {
         System.out.println("\n");
         System.out.println("------------------------");
         System.out.println("Escolha uma das opções: ");
         System.out.println("1 - Cliente");
         System.out.println("2 - Funcionário");
         System.out.println("3 - Ler ficheiros .json");
-        System.out.println("4 - Exportação relatórios");
+        System.out.println("4 - Exportação dados");
+        System.in.readNBytes(escolha);
     }
 
     public void printMenuCliente() {
@@ -44,7 +49,8 @@ public class API {
         System.out.println("------------------------");
         System.out.println("1 - Adicionar cliente");
         System.out.println("2 - Editar cliente");
-        System.out.println("3 - Alterar posição do cliente");
+        System.out.println("3 - Remover cliente");
+        System.out.println("4 - Alterar posição do cliente");
         System.out.println("------------------------");
     }
 
@@ -54,7 +60,8 @@ public class API {
         System.out.println("------------------------");
         System.out.println("1 - Adicionar funcionário");
         System.out.println("2 - Editar funcionário");
-        System.out.println("3 - Alterar posição do funcionário");
+        System.out.println("3 - Remover funcionário");
+        System.out.println("4 - Alterar posição do funcionário");
         System.out.println("------------------------");
     }
 
