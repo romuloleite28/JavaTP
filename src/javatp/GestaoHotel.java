@@ -7,8 +7,20 @@ package javatp;
 
 /**
  *
- * @author phrea
+ * @author Asus
  */
-public interface GestaoHotel {
+public class GestaoHotel implements Hotel{
+    
+    private int max_registers;
+    private int num_registers;
+    private Registo[] registos;
+    
+    public GestaoHotel(){
+        this.registos = new Registo[this.max_registers];
+    }
+    
+    
+    
+    
     
 }
