@@ -15,6 +15,10 @@ import java.time.LocalDate;
  */
 public class Cliente extends Pessoa {
 
+    public Cliente(int id, String nome, LocalDate dataNascimento, Genero genero, float peso, float altura, String[] patologias, TipoPessoa tipo) {
+        super(id, nome, dataNascimento, genero, peso, altura, patologias, tipo);
+    }
+
     
    
     

@@ -23,8 +23,8 @@ public class API {
         
         Registo[] arrayRegistos = new Registo[]{};
         JsonImportar jsonimportar = new JsonImportar();
-        Registos[]
-        Hotel hotel = new Hotel();
+        arrayRegistos = jsonimportar.importarData(arrayRegistos, "/resources/leituras.json");
+        Hotel hotel = new Hotel(arrayRegistos,); //meter arrayclientes
 
         Scanner sc = new Scanner(System.in);
         int escolha = 0;

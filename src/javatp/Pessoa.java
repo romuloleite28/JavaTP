@@ -28,7 +28,21 @@ public abstract class Pessoa {
    
     
     
-//    @Override
+
+
+    public Pessoa(int id, String nome, LocalDate dataNascimento, Genero genero, float peso, float altura, String[] patologias, TipoPessoa tipo) {
+        this.id = id;
+        this.nome = nome;
+        this.dataNascimento = dataNascimento;
+        this.genero = genero;
+        this.peso = peso;
+        this.altura = altura;
+        this.patologias = patologias;
+        this.tipo = tipo;
+    }
+
+    
+    //    @Override
 //    public boolean equals(Object obj) {
 //        if (obj.getClass().equals(this.getClass())) {
 //
@@ -38,5 +52,4 @@ public abstract class Pessoa {
 //        }
 //        return false;
 //    }
-
 }

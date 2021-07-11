@@ -5,6 +5,8 @@
  */
 package javatp;
 
+import java.time.LocalDate;
+
 /**
  *
  * @author Romulo Leite
@@ -12,6 +14,10 @@ package javatp;
 public class Funcionario extends Pessoa{
 
     private String cargo;
+
+    public Funcionario(int id, String nome, LocalDate dataNascimento, Genero genero, float peso, float altura, String[] patologias, TipoPessoa tipo) {
+        super(id, nome, dataNascimento, genero, peso, altura, patologias, tipo);
+    }
     
 
     
