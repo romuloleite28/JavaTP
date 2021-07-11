@@ -10,5 +10,5 @@ package javatp;
  * @author Romulo Leite
  */
 public enum TipoPessoa {
-    CLIENTE, FUNCIONARIO, DESCONHECIDO;
+    CLIENTE, FUNCIONARIO;
 }

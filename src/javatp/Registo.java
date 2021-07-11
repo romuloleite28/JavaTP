@@ -13,36 +13,9 @@ public class Registo {
     
     private String data,hora;
     private float temperatura;
-
-    public Registo(String data, String hora, float temperatura) {
-        this.data = data;
-        this.hora = hora;
-        this.temperatura = temperatura;
-    }
-
-    public String getData() {
-        return data;
-    }
-
-    public void setData(String data) {
-        this.data = data;
-    }
-
-    public String getHora() {
-        return hora;
-    }
-
-    public void setHora(String hora) {
-        this.hora = hora;
-    }
-
-    public float getTemperatura() {
-        return temperatura;
-    }
-
-    public void setTemperatura(float temperatura) {
-        this.temperatura = temperatura;
-    }
+    
+   
+    
     
     
     
