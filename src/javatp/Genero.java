@@ -9,8 +9,6 @@ package javatp;
  *
  * @author Romulo Leite
  */
-public class Hotel {
-    
-    private Hotel[] clientes;
-    
+public enum Genero {
+    MASCULINO, FEMININO;
 }
