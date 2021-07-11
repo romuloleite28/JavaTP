@@ -20,7 +20,9 @@ public class JsonImportar {
     public JsonImportar() {
     }
 
-    public boolean importarData(Hotel hotel, String filePath) throws FileNotFoundException {
+    public Registo[] importarData(Registo[] arrayRegistos, String filePath) throws FileNotFoundException {
+
+        
 
         JSONArray jsonArray = (JSONArray) JSONValue.parse(new FileReader(filePath));
 
@@ -33,7 +35,6 @@ public class JsonImportar {
             JSONObject jsonDiv = (JSONObject) jsonObj.get("divisão");
             String id_divisao = jsonDiv.get("id").toString();
             String tipo_divisao = jsonDiv.get("tipo").toString();
-          
 
             Double temperatura = Double.parseDouble(jsonObj.get("temperatura").toString());
 
@@ -43,11 +44,18 @@ public class JsonImportar {
 
             String data = jsonObj.get("data").toString();
             String hora = jsonObj.get("hora").toString();
-            
-            Registo registo = new Registo(String data, String hora, double temperatura, String id_divisao, String tipo_divisao, String id_pessoa, String tipo_pessoa)
-            hotel.adicionarRegisto();
-        }
 
+            Registo registo = new Registo(data, hora, temperatura, id_divisao, tipo_divisao, id_pessoa, tipo_pessoa);
+            arrayRegistos = adicionarRegisto(arrayRegistos, registo);
+        }
+        return arrayRegistos;
+    }
+
+    public Registo[] adicionarRegisto(Registo[] registos, Registo registo) {
+        Registo[] registosCopy = new Registo[registos.length + 1];
+        System.arraycopy(registos, 0, registosCopy, 0, registos.length);
+        registosCopy[registosCopy.length - 1] = registo;
+        return registosCopy;
     }
 
     public boolean containsKeys(JSONObject jsonObj, String[] keys) {
@@ -62,6 +70,4 @@ public class JsonImportar {
         return true;
     }
 
-    
-    
 }

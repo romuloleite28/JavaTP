@@ -6,6 +6,8 @@
 package API;
 
 import java.util.Scanner;
+import javatp.JsonImportar;
+import javatp.Registo;
 
 /**
  *
@@ -17,7 +19,13 @@ public class API {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+
         
+        Registo[] arrayRegistos = new Registo[]{};
+        JsonImportar jsonimportar = new JsonImportar();
+        Registos[]
+        Hotel hotel = new Hotel();
+
         Scanner sc = new Scanner(System.in);
         int escolha = 0;
 

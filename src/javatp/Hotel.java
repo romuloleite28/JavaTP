@@ -11,13 +11,20 @@ package javatp;
  */
 public class Hotel {
     
-    private Hotel[] clientes;
+    private Cliente[] clientes;
     private Registo[] registos;
-    
-    
-    public boolean adicionarRegisto(){
-        
+
+    public Hotel(Cliente[] clientes, Registo[] registos) {
+        this.clientes = clientes;
+        this.registos = registos;
     }
+    
+    
+    
+    
+   
+    
+    
     
     
     
