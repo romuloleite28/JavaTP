@@ -15,14 +15,14 @@ import java.time.LocalDate;
  */
 public abstract class Pessoa {
     
-    private int id;
-    private String nome;
-    private LocalDate dataNascimento;
-    private Genero genero;
-    private float peso;
-    private float altura;
-    private String patologias[];
-    private TipoPessoa tipo;
+    protected int id;
+    protected String nome;
+    protected LocalDate dataNascimento;
+    protected Genero genero;
+    protected float peso;
+    protected float altura;
+    protected String patologias[];
+    protected TipoPessoa tipo;
     
     
    
