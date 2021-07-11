@@ -86,8 +86,8 @@ public class API {
         System.out.println("Escolha uma das opções: ");
         System.out.println("1 - Cliente");
         System.out.println("2 - Funcionário");
-        System.out.println("3 - Ler ficheiros .json");
-        System.out.println("4 - Exportação dados");
+        System.out.println("3 - Importar dados");
+        System.out.println("4 - Exportar dados");
 
     }
 
@@ -97,7 +97,6 @@ public class API {
         System.out.println("------------------------");
         System.out.println("1 - Adicionar cliente");
         System.out.println("2 - Remover cliente");
-        System.out.println("3 - Alterar posição do cliente");
         System.out.println("------------------------");
     }
 
@@ -107,7 +106,6 @@ public class API {
         System.out.println("------------------------");
         System.out.println("1 - Adicionar funcionário");
         System.out.println("2 - Remover funcionário");
-        System.out.println("3 - Alterar posição do funcionário");
         System.out.println("------------------------");
     }
 

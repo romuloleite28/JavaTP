@@ -12,5 +12,13 @@ package javatp;
 public class Hotel {
     
     private Hotel[] clientes;
+    private Registo[] registos;
+    
+    
+    public boolean adicionarRegisto(){
+        
+    }
+    
+    
     
 }

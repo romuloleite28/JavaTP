@@ -23,6 +23,8 @@ public abstract class Pessoa {
     private float altura;
     private String patologias[];
     private TipoPessoa tipo;
+    
+    
    
     
     
