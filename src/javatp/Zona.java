@@ -10,13 +10,15 @@ package javatp;
  * @author Romulo Leite
  */
 public class Zona {
-    
-    private String nome;
-    private Divisao[] divisoes;
-    private int numeroDivisoes;
-    
 
-   
-    
-    
+    private String nome;
+    private int numeroDivisoes;
+    static Divisao[] divisoes;
+
+    public Zona(String nome, int numeroDivisoes, Divisao[] divisoes) {
+        this.nome = nome;
+        this.numeroDivisoes = numeroDivisoes;
+        this.divisoes = divisoes;
+    }
+
 }

@@ -10,15 +10,17 @@ package javatp;
  * @author Romulo Leite
  */
 public class Divisao {
-    
+
     private String nome;
     private int lotacao;
     private Zona zona;
-    
+    static Pessoa[] pessoas;
 
-    
-    
-    
-    
-    
+    public Divisao(String nome, int lotacao, Zona zona, Pessoa[] pessoas) {
+        this.nome = nome;
+        this.lotacao = lotacao;
+        this.zona = zona;
+        this.pessoas = pessoas;
+    }
+
 }

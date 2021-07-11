@@ -10,22 +10,15 @@ package javatp;
  * @author Romulo Leite
  */
 public class Hotel {
-    
+
     private Cliente[] clientes;
     private Registo[] registos;
+    static Zona[] zonas;
 
-    public Hotel(Cliente[] clientes, Registo[] registos) {
+    public Hotel(Cliente[] clientes, Registo[] registos, Zona[] zonas) {
         this.clientes = clientes;
         this.registos = registos;
+        this.zonas = zonas;
     }
-    
-    
-    
-    
-   
-    
-    
-    
-    
-    
+
 }

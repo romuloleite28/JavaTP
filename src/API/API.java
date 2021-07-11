@@ -24,7 +24,7 @@ public class API {
         Registo[] arrayRegistos = new Registo[]{};
         JsonImportar jsonimportar = new JsonImportar();
         arrayRegistos = jsonimportar.importarData(arrayRegistos, "/resources/leituras.json");
-        Hotel hotel = new Hotel(arrayRegistos,); //meter arrayclientes
+        Hotel hotel = new Hotel(arrayRegistos,); //meter array clientes
 
         Scanner sc = new Scanner(System.in);
         int escolha = 0;
@@ -115,6 +115,8 @@ public class API {
         System.out.println("1 - Adicionar funcionário");
         System.out.println("2 - Remover funcionário");
         System.out.println("------------------------");
+        
+        
     }
 
     public void printMenuJson() {
